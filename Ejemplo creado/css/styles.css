@@ -119,7 +119,7 @@ a {
 }
 
 img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -141,10 +141,16 @@ nav, .servicios, .presentacion, .footer-content {
 }
 
 .centrado {
+  overflow: hidden;
+  border-radius: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  transition: all 0.5s ease-in-out;
+}
+.centrado:hover {
+  box-shadow: 0px 0px 20px rgba(170, 255, 177, 0.8);
 }
 
 .logo {
@@ -157,19 +163,44 @@ section {
 
 img {
   border-radius: 0.7rem;
-  margin: 1rem;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+img:hover {
+  filter: saturate(180%);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 h1 {
   font-size: 30px;
+  transition: background 0.3s ease-in-out;
+}
+h1:hover {
+  scale: 1.01;
+  color: #db34b1;
+  text-shadow: 0px 4px 8px rgba(153, 35, 123, 0.87);
 }
 
 h2 {
   font-size: 25px;
+  transition: background 0.3s ease-in-out;
+}
+h2:hover {
+  scale: 1.01;
+  position: relative;
+  bottom: 0.1rem;
+  left: 0.3rem;
+  color: #db34b1;
 }
 
 h3 {
   font-size: 20px;
+  transition: background 0.3s ease-in-out;
+}
+h3:hover {
+  text-shadow: 0px 4px 8px rgba(255, 206, 248, 0.87);
+  color: #db34b1;
 }
 
 p, li {
@@ -183,6 +214,10 @@ p, li {
   cursor: pointer;
   margin: 1rem;
   font-size: 20px;
+  transition: background 0.3s ease-in-out;
+}
+.btn:hover, .btn-secundario:hover, .btn-principal:hover {
+  opacity: 0.8;
 }
 
 .btn-principal {

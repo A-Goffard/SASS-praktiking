@@ -36,7 +36,7 @@ a{
 
 
 img{
-    width:80%;
+    width:100%;
     height: auto;
 }
 
@@ -60,7 +60,13 @@ nav, .servicios, .presentacion, .footer-content{
 }
 
 .centrado{
-    @include caja-flex(center, center, nowrap)
+    overflow:hidden;
+    border-radius: 0.7rem;
+    @include caja-flex(center, center, nowrap);
+    transition:all .5s ease-in-out;
+    &:hover {
+        box-shadow: 0px 0px 20px rgba(170, 255, 177, 0.8);
+    }
 }
 
 .logo{
@@ -74,21 +80,46 @@ section {
 
 img{
     border-radius: 0.7rem;
-    margin: 1rem;
+    transition:all .5s ease-in-out;
+    overflow:hidden;
+    &:hover {
+        filter: saturate(180%);
+        -webkit-transform:scale(1.3);
+        transform:scale(1.3);
+    }
 }
 
 // Tamaños de letra
 
 h1{
     font-size: $font-h1;
+    transition: background 0.3s ease-in-out;
+    &:hover {
+        scale: 1.01;
+        color: $primary-color;
+        text-shadow: 0px 4px 8px rgba(153, 35, 123, 0.87);
+    }
 }
 
 h2{
     font-size: $font-h2;
+    transition: background 0.3s ease-in-out;
+    &:hover {
+        scale: 1.01;
+        position: relative;
+        bottom: 0.1rem;
+        left: 0.3rem;
+        color: $primary-color;
+    }
 }
 
 h3{
     font-size: $font-h3;
+    transition: background 0.3s ease-in-out;
+    &:hover {
+        text-shadow: 0px 4px 8px rgba(255, 206, 248, 0.87);
+        color: $primary-color;
+    }
 }
 
 p, li{
@@ -102,6 +133,11 @@ p, li{
     cursor: pointer;
     margin: 1rem;
     font-size: $font-p;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .btn-principal{
