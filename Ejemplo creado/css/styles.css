@@ -1,93 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-header {
-  background-color: #f7b1ed;
-  color: #3d053f;
-  padding: 1.875rem;
-  text-align: center;
-}
-header h1 {
-  margin: 0 1rem;
-  font-size: 2.25rem;
-  color: #db34b1;
-}
-@media (min-width: 769px) {
-  header h1 {
-    font-size: 3.75rem;
-  }
-}
-header .logo {
-  width: 3.75rem;
-}
-@media (min-width: 769px) {
-  header .logo {
-    width: 6.25rem;
-  }
-}
-
-section h1 {
-  margin: 0 1rem;
-  font-size: 2.25rem;
-  color: #720a75;
-}
-@media (min-width: 769px) {
-  section h1 {
-    font-size: 3.75rem;
-  }
-}
-section h2 {
-  margin: 0 1rem;
-  font-size: 1.875rem;
-  color: #720a75;
-}
-@media (min-width: 769px) {
-  section h2 {
-    font-size: 3.125rem;
-  }
-}
-section h3 {
-  margin: 0 1rem;
-  font-size: 1.75rem;
-  color: #720a75;
-}
-@media (min-width: 769px) {
-  section h3 {
-    font-size: 2.5rem;
-  }
-}
-section p {
-  margin: 0 1rem;
-  font-size: 1.5625rem;
-  color: #3d053f;
-}
-@media (min-width: 769px) {
-  section p {
-    font-size: 2.1875rem;
-  }
-}
-
-nav {
-  padding: 0.625rem;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav li {
-  margin: 0 0.625rem;
-}
-nav li a {
-  color: #ecf0f1;
-}
-nav li a:hover {
-  color: #db34b1;
-}
-
-footer {
-  background-color: #f7b1ed;
-  color: #db34b1;
-  text-align: center;
-  padding: 0.625rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -100,16 +14,13 @@ body {
   padding: 0;
   line-height: 1.6;
   font-family: "Noto Sans JP", sans-serif;
-  background: url("../images/fondo.png");
+  background: url("../images/fondo.png") no-repeat center center fixed;
   background-size: cover;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+  padding: 0;
 }
 
 a {
@@ -118,19 +29,99 @@ a {
   color: rgb(11, 128, 11);
 }
 
-img {
-  width: 100%;
-  height: auto;
+h1, h2, h3, p, li {
+  margin: 0 1rem;
 }
 
-nav, .servicios, .presentacion, .footer-content {
-  width: 80%;
-  margin: auto;
+h1 {
+  font-size: 30px;
+  color: #720a75;
+  transition: all 0.2s ease-in-out;
+}
+h1:hover {
+  text-shadow: 0px 4px 8px rgba(61, 5, 63, 0.8);
+  scale: 1.01;
 }
 
-.titulo-servicios, .presentacion, .servicios {
-  margin-bottom: 5%;
-  margin-top: 5%;
+h2 {
+  font-size: 25px;
+  color: #720a75;
+  transition: all 0.2s ease-in-out;
+}
+h2:hover {
+  text-shadow: 0px 4px 8px rgba(101, 27, 104, 0.8);
+  scale: 1.01;
+}
+
+h3 {
+  font-size: 20px;
+  color: #720a75;
+  transition: all 0.2s ease-in-out;
+}
+h3:hover {
+  text-shadow: 0px 0px 10px rgba(248, 219, 248, 0.952);
+  color: #db34b1;
+}
+
+p, li {
+  font-size: 20px;
+  color: #3d053f;
+}
+
+header {
+  background-color: #f7b1ed;
+  color: #3d053f;
+  padding: 1.875rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 1rem;
+  color: #db34b1;
+  font-size: 2.25rem;
+}
+@media (min-width: 769px) {
+  header h1 {
+    font-size: 3.75rem;
+  }
+}
+
+header .logo {
+  width: 3.75rem;
+}
+@media (min-width: 769px) {
+  header .logo {
+    width: 6.25rem;
+  }
+}
+
+nav {
+  padding: 0.625rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 0.625rem;
+}
+
+nav li a {
+  color: #ecf0f1;
+}
+
+nav li a:hover {
+  color: #db34b1;
+}
+
+footer {
+  background-color: #f7b1ed;
+  color: #db34b1;
+  text-align: center;
+  padding: 0.625rem;
 }
 
 .horizontal {
@@ -146,65 +137,20 @@ nav, .servicios, .presentacion, .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   transition: all 0.5s ease-in-out;
 }
 .centrado:hover {
   box-shadow: 0px 0px 20px rgba(170, 255, 177, 0.8);
 }
 
-.logo {
-  width: 5rem;
-}
-
-section {
-  margin: 3rem 0 3rem 0;
+nav, .servicios, .presentacion, .footer-content {
+  margin: 1rem;
 }
 
 img {
-  border-radius: 0.7rem;
-  transition: all 0.5s ease-in-out;
-  overflow: hidden;
-}
-img:hover {
-  filter: saturate(180%);
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-h1 {
-  font-size: 30px;
-  transition: background 0.3s ease-in-out;
-}
-h1:hover {
-  scale: 1.01;
-  color: #db34b1;
-  text-shadow: 0px 4px 8px rgba(153, 35, 123, 0.87);
-}
-
-h2 {
-  font-size: 25px;
-  transition: background 0.3s ease-in-out;
-}
-h2:hover {
-  scale: 1.01;
-  position: relative;
-  bottom: 0.1rem;
-  left: 0.3rem;
-  color: #db34b1;
-}
-
-h3 {
-  font-size: 20px;
-  transition: background 0.3s ease-in-out;
-}
-h3:hover {
-  text-shadow: 0px 4px 8px rgba(255, 206, 248, 0.87);
-  color: #db34b1;
-}
-
-p, li {
-  font-size: 20px;
+  width: 100%;
+  margin: auto;
 }
 
 .btn, .btn-secundario, .btn-principal {
@@ -216,6 +162,7 @@ p, li {
   font-size: 20px;
   transition: background 0.3s ease-in-out;
 }
+
 .btn:hover, .btn-secundario:hover, .btn-principal:hover {
   opacity: 0.8;
 }
@@ -228,6 +175,36 @@ p, li {
 .btn-secundario {
   color: #ecf0f1;
   background-color: rgb(11, 128, 11);
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  text-align: left;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.7rem;
+  transition: all 0.5s ease-in-out;
+}
+.centrado:hover {
+  box-shadow: 0px 0px 20px rgba(170, 255, 177, 0.8);
+}
+
+img {
+  border-radius: 0.7rem;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+img:hover {
+  filter: saturate(180%);
+  transform: scale(1.3);
 }
 
 /*# sourceMappingURL=styles.css.map */

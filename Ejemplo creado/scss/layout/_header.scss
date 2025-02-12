@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+header {
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: $spacing-large;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 1rem;
+  color: $primary-color;
+  font-size: 2.25rem;
+
+  @include media-query($breakpoint-tablet) {
+    font-size: 3.75rem;
+  }
+}
+
+header .logo {
+  width: 3.75rem;
+
+  @include media-query($breakpoint-tablet) {
+    width: 6.25rem;
+  }
+}
+
+nav {
+  padding: 0.625rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 0.625rem;
+}
+
+nav li a {
+  color: #ecf0f1;
+}
+
+nav li a:hover {
+  color: $primary-color;
+}

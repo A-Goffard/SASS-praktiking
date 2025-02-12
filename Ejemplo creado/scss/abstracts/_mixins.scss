@@ -1,0 +1,25 @@
+// Mixin para usar fuentes variables
+@mixin font-size($size) {
+    font-size: $size;
+  }
+  
+  // Mixin para los breakpoints
+  @mixin media-query($min-width) {
+    @media (min-width: #{$min-width}) {
+      @content;
+    }
+  }
+  
+  @mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+// _mixins.scss
+@mixin flexbox($principal, $cruzado, $wrap){
+  display: flex;
+  justify-content: $principal;
+  align-items: $cruzado;
+  flex-wrap: $wrap;
+}

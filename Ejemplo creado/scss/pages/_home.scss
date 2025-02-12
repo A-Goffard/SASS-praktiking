@@ -1,0 +1,33 @@
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    text-align: left;
+  }
+  
+  .centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7rem;
+    transition: all 0.5s ease-in-out;
+
+  
+    &:hover {
+      box-shadow: 0px 0px 20px rgba(170, 255, 177, 0.8);
+    }
+  }
+  
+  img {
+    border-radius: 0.7rem;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  
+    &:hover {
+      filter: saturate(180%);
+      transform: scale(1.3);
+    }
+  }
+  

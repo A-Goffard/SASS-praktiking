@@ -1,6 +1,11 @@
-
-@import '_variables';
-@import '_mixins';
-@import '_funciones';
-@import '_layout';
-@import '_global';
+// Importación de archivos SCSS generales
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'abstracts/funciones' as *;
+@use 'base/global';
+@use 'base/typography';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/layout';
+@use 'components/buttons';
+@use 'pages/home';

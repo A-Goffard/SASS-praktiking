@@ -1,0 +1,27 @@
+// Colores
+$primary-color: #db34b1;
+$secondary-color: #f7b1ed;
+$background-color: #ecf0f1;
+$text-color: #3d053f;
+$title-color: #720a75;
+$contrast-color: rgb(11, 128, 11);
+
+// Tipografía
+$font-primary: 'Noto Sans JP', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+$font-stack: $font-primary;
+
+// Tamaños
+$font-size-h1: 30px;
+$font-size-h2: 25px;
+$font-size-h3: 20px;
+$font-size-p: 20px;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 769px;
+$breakpoint-desktop: 1024px;
+
+// Espaciado
+$spacing-unit: 1rem;
+$spacing-large: 1.875rem;

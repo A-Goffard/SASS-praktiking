@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+.btn, .btn-secundario, .btn-principal {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  margin: 1rem;
+  font-size: $font-size-p;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover, .btn-secundario:hover, .btn-principal:hover {
+  opacity: 0.8;
+}
+
+.btn-principal {
+  color: $primary-color;
+  background-color: $secondary-color;
+}
+
+.btn-secundario {
+  color: #ecf0f1;
+  background-color: $contrast-color;
+}
