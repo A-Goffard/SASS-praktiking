@@ -1,0 +1,129 @@
+// 📌 1️⃣ Variables de colores
+$primary-color: #3498db; // Azul
+$secondary-color: #e74c3c; // Rojo
+$tertiary-color: #2ecc71; // Verde
+$contrast-color: #f39c12; // Naranja
+
+// Colores de texto
+$text-light: white;
+$text-dark: #333;
+
+// Colores de fondo para bloques
+$bg-block-1: #ecf0f1; // Gris claro
+$bg-block-2: #dff9fb; // Azul muy claro
+$bg-block-3: #f9ebea; // Rojo muy claro
+
+// 📌 2️⃣ Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $primary-color;
+    padding: 20px;
+    
+    h1 {
+        color: $text-light;
+        font-size: 2.5rem;
+    }
+}
+
+// 📌 3️⃣ Mixins para reutilizar estilos
+@mixin section-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+// 📌 4️⃣ Aplicamos estilos a los bloques con diferentes colores
+.bloque {
+    img {
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+// 📌 Diferentes estilos por bloque
+.bloque-1 {
+    @include section-style($bg-block-1, $text-dark);
+    
+    h2 {
+        color: $primary-color;
+    }
+}
+
+.bloque-2 {
+    @include section-style($bg-block-2, $text-dark);
+    
+    h2 {
+        color: $secondary-color;
+    }
+}
+
+.bloque-3 {
+    @include section-style($bg-block-3, $text-dark);
+    
+    h2 {
+        color: $contrast-color;
+    }
+}
+
+// 📌 5️⃣ Centrar botón debajo de la imagen
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+// 📌 6️⃣ Estilos reutilizables para botones con `@extend`
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// Botones personalizados por bloque
+.btn-1 {
+    @extend .btn;
+    background-color: $primary-color;
+    color: $text-light;
+}
+
+.btn-2 {
+    @extend .btn;
+    background-color: $secondary-color;
+    color: $text-light;
+}
+
+.btn-3 {
+    @extend .btn;
+    background-color: $contrast-color;
+    color: $text-light;
+}
