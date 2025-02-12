@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+header {
+  background-color: #f7b1ed;
+  color: #3d053f;
+  padding: 1.875rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0 1rem;
+  font-size: 2.25rem;
+  color: #db34b1;
+}
+@media (min-width: 769px) {
+  header h1 {
+    font-size: 3.75rem;
+  }
+}
+header .logo {
+  width: 3.75rem;
+}
+@media (min-width: 769px) {
+  header .logo {
+    width: 6.25rem;
+  }
+}
+
+section h1 {
+  margin: 0 1rem;
+  font-size: 2.25rem;
+  color: #720a75;
+}
+@media (min-width: 769px) {
+  section h1 {
+    font-size: 3.75rem;
+  }
+}
+section h2 {
+  margin: 0 1rem;
+  font-size: 1.875rem;
+  color: #720a75;
+}
+@media (min-width: 769px) {
+  section h2 {
+    font-size: 3.125rem;
+  }
+}
+section h3 {
+  margin: 0 1rem;
+  font-size: 1.75rem;
+  color: #720a75;
+}
+@media (min-width: 769px) {
+  section h3 {
+    font-size: 2.5rem;
+  }
+}
+section p {
+  margin: 0 1rem;
+  font-size: 1.5625rem;
+  color: #3d053f;
+}
+@media (min-width: 769px) {
+  section p {
+    font-size: 2.1875rem;
+  }
+}
+
+nav {
+  padding: 0.625rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  margin: 0 0.625rem;
+}
+nav li a {
+  color: #ecf0f1;
+}
+nav li a:hover {
+  color: #db34b1;
+}
+
+footer {
+  background-color: #f7b1ed;
+  color: #db34b1;
+  text-align: center;
+  padding: 0.625rem;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: "Noto Sans JP", sans-serif;
+  background: url("../images/fondo.png");
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(11, 128, 11);
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+nav, .servicios, .presentacion, .footer-content {
+  width: 80%;
+  margin: auto;
+}
+
+.titulo-servicios, .presentacion, .servicios {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  width: 5rem;
+}
+
+section {
+  margin: 3rem 0 3rem 0;
+}
+
+img {
+  border-radius: 0.7rem;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p, li {
+  font-size: 20px;
+}
+
+.btn, .btn-secundario, .btn-principal {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  margin: 1rem;
+  font-size: 20px;
+}
+
+.btn-principal {
+  color: #db34b1;
+  background-color: #f7b1ed;
+}
+
+.btn-secundario {
+  color: #ecf0f1;
+  background-color: rgb(11, 128, 11);
+}
+
+/*# sourceMappingURL=styles.css.map */

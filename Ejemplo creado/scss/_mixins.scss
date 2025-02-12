@@ -1,0 +1,28 @@
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive-font($min-size, $max-size) {
+    font-size: $min-size;
+  
+    @media (min-width: $breakpoint-tablet) {
+      font-size: $max-size;
+    }
+  }
+
+  @mixin responsive-tam($min-size, $max-size) {
+    width: $min-size;
+  
+    @media (min-width: $breakpoint-tablet) {
+      width: $max-size;
+    }
+  }
+
+  @mixin caja-flex($principal, $cruzado, $wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
+  }

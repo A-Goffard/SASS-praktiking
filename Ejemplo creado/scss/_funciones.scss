@@ -1,0 +1,3 @@
+@function calcularRem($px) {
+    @return $px / 16px * 1rem;
+  }
