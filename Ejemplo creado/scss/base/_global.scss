@@ -1,5 +1,5 @@
 @use '../abstracts/variables' as *;
-
+@use '../abstracts/mixins' as *;
 // Reseteo de márgenes y padding
 * {
   margin: 0;
@@ -19,7 +19,6 @@ body {
   font-family: $font-primary;
   background: url("../images/fondo.png") no-repeat center center fixed;
   background-size: cover;
-
 }
 
 ul {

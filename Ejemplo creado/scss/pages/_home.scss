@@ -12,18 +12,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.7rem;
-    transition: all 0.5s ease-in-out;
-
-  
+    transition: all 2s ease-in-out;
     &:hover {
-      box-shadow: 0px 0px 20px rgba(170, 255, 177, 0.8);
+      box-shadow: 0px 0px 20px rgba(4, 212, 21, 0.8);
     }
   }
   
   img {
     border-radius: 0.7rem;
     width: 100%;
-    transition: all 0.5s ease-in-out;
+    transition: all 2s ease-in-out;
   
     &:hover {
       filter: saturate(180%);

@@ -16,6 +16,10 @@ header h1 {
   @include media-query($breakpoint-tablet) {
     font-size: 3.75rem;
   }
+  &:hover {
+    text-shadow: 0px 4px 8px rgba(248, 220, 242, 0.973);
+    scale: 1.02;
+  }
 }
 
 header .logo {
